@@ -11,9 +11,10 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("Connected to game server");
-  });
-  conn.on("connect", () => {
     conn.write("Name: JTL");
+    setTimeout(() => {
+      conn.write("Move: up");
+    }, 2000);
   });
 
   return conn;
