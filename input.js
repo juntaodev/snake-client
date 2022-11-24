@@ -27,6 +27,17 @@ const setupInput = function(conn) {
       if (key === 'd') {
         connection.write('Move: right');
       }
+
+      if (key === '1') {
+        connection.write('Say: WHATUP!');
+      }
+      if (key === '2') {
+        connection.write('Say: LETS GO!');
+      }
+      if (key === '3') {
+        connection.write('Say: SEEYA!');
+      }
+
     });
   };
  
